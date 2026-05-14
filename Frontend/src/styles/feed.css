@@ -1,0 +1,23 @@
+/* Estilos específicos do feed */
+.card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  border-color: #00c6ff;
+}
+
+.card h3 {
+  margin: 0;
+  color: #00c6ff;
+}
+
+.card p {
+  color: #ccc;
+}
