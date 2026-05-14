@@ -14,10 +14,13 @@ function navegar(pagina) {
 }
 
 // Eventos dos botões
-document.getElementById("btn-home").addEventListener("click", () => navegar("home"));
-document.getElementById("btn-login").addEventListener("click", () => navegar("login"));
-document.getElementById("btn-feed").addEventListener("click", () => navegar("feed"));
-document.getElementById("btn-perfil").addEventListener("click", () => navegar("perfil"));
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btn-home").addEventListener("click", () => navegar("home"));
+  document.getElementById("btn-login").addEventListener("click", () => navegar("login"));
+  document.getElementById("btn-feed").addEventListener("click", () => navegar("feed"));
+  document.getElementById("btn-perfil").addEventListener("click", () => navegar("perfil"));
+  navegar("home"); // carrega a home por padrão
+});
 
 // Modal
 function abrirModal(analise) {
